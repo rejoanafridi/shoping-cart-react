@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
+body{
+  font-family: Helvetica, Arial, sans-serif;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,h2,h3{
+  margin:0.5rem;
 }
+h1{
+  font-size: 1.5rem;
+  color: rgb(255, 102, 0);
+}
+h2{
+  font-size: 1.2rem;
+}
+h3{
+  font-size: 1rem;
+}
+a{
+  text-decoration:none;
+}
+.row{
+  display:flex;
+  justify-content:space-between;
+}
+.col-1{
+  flex:1;
+}
+.col-2{
+  flex:2;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.block{
+  background-color:rgba(187, 172, 172, 0.37);
+  padding:1rem;
+  margin:0.5rem;
+  border-radius: 0.5rem;
+}
+.row-center{
+  align-items:center;
+}
+img.small{
+  max-height: 8rem;
+}
+button{
+  font-size: 0.8rem;
+  padding: 0.2em;
+  margin: 0.1em;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  background-color: orange;
+  width: 100%;
+  cursor: pointer;
+}
+button.add{
+  background-color: red;
+  width : 1.5rem;
+}
+button.remove{
+  background-color: green;
+  width : 1.5rem;
+}
+button.badge{
+  background-color: red;
+  border:none;
   color: white;
+  width: 1.5rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-right{
+  text-align: right;
 }
